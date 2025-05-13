@@ -1,0 +1,22 @@
+{
+  "name": "githubauto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package": "electron-packager . puppeteer-app --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "electron": "^36.2.0",
+    "puppeteer": "^24.8.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.1.2"
+  }
+}
