@@ -15,6 +15,9 @@ const { email, password } = JSON.parse(
 (async () => {
   const browser = await puppeteer.launch({
     headless: false,
+    slowMo: 100,
+    defaultViewport: null,
+    args: ["--start-maximized"],
   });
 
   const page = await browser.newPage();
